@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1,
+        "producto": "Hamburguesa",
+        "imagen": "assets/img/producto1.webp",
+        "precio": 17676,
+        "descripcion": "Hamburguesa con carne, queso, lechuga, tomate y cebolla."
+    },
+    {
+        "id": 2,
+        "producto": "Sushi",
+        "imagen": "assets/img/producto2.webp",
+        "precio": 16056,
+        "descripcion": "Rollo de sushi con arroz, pescado, mariscos y verduras."
+    },
+    {
+        "id": 3,
+        "producto": "Coca Cola",
+        "imagen": "assets/img/producto3.webp",
+        "precio": 2522,
+        "descripcion": "Bebida gaseosa de cola."
+    },
+    {
+        "id": 4,
+        "producto": "Pollo Asado",
+        "imagen": "assets/img/producto4.webp",
+        "precio": 18446,
+        "descripcion": "Pechuga de pollo asada con guarnición."
+    },
+    {
+        "id": 5,
+        "producto": "Pizza",
+        "imagen": "assets/img/producto5.webp",
+        "precio": 41385,
+        "descripcion": "Pizza con salsa de tomate, queso y diferentes toppings."
+    },
+    {
+        "id": 6,
+        "producto": "Perro Caliente",
+        "imagen": "assets/img/producto6.webp",
+        "precio": 24486,
+        "descripcion": "Perro caliente con salchicha, pan, ketchup, mostaza y mayonesa."
+    },
+    {
+        "id": 7,
+        "producto": "Picada",
+        "imagen": "assets/img/producto7.webp",
+        "precio": 33476,
+        "descripcion": "Mezcla de embutidos, quesos y verduras."
+    },
+    {
+        "id": 8,
+        "producto": "Tacos",
+        "imagen": "assets/img/producto8.webp",
+        "precio": 19026,
+        "descripcion": "Tortillas de maíz rellenas de carne, frijoles, verduras y salsa."
+    },
+    {
+        "id": 9,
+        "producto": "Arroz Chino",
+        "imagen": "assets/img/producto9.webp",
+        "precio": 18483,
+        "descripcion": "Arroz frito con pollo, verduras y salsa agridulce."
+    },
+    {
+        "id": 10,
+        "producto": "Jugo",
+        "imagen": "assets/img/producto10.webp",
+        "precio": 2856,
+        "descripcion": "Bebida hecha a base de jugo de frutas."
+    },
+    {
+        "id": 11,
+        "producto": "Ensalada César",
+        "imagen": "assets/img/producto11.webp",
+        "precio": 15000,
+        "descripcion": "Ensalada con lechuga romana, pollo, queso parmesano, croutons y salsa césar."
+      },
+      {
+        "id": 12,
+        "producto": "Pasta con salsa boloñesa",
+        "imagen": "assets/img/producto12.webp",
+        "precio": 12000,
+        "descripcion": "Pasta con salsa de carne, tomate y queso."
+      },
+      {
+        "id": 13,
+        "producto": "Pizza margarita",
+        "imagen": "assets/img/producto13.webp",
+        "precio": 18000,
+        "descripcion": "Pizza con salsa de tomate, queso mozzarella y albahaca."
+      },
+      {
+        "id": 14,
+        "producto": "Pollo al horno",
+        "imagen": "assets/img/producto14.webp",
+        "precio": 16000,
+        "descripcion": "Pollo asado con un toque de limón y hierbas."
+      },
+      {
+        "id": 15,
+        "producto": "Hamburguesa con queso",
+        "imagen": "assets/img/producto15.webp",
+        "precio": 15000,
+        "descripcion": "Hamburguesa con carne, queso, lechuga, tomate y cebolla."
+      },
+      {
+        "id": 16,
+        "producto": "Perro caliente",
+        "imagen": "assets/img/producto16.webp",
+        "precio": 12000,
+        "descripcion": "Perro caliente con salchicha, pan, ketchup, mostaza y mayonesa."
+      },
+      {
+        "id": 17,
+        "producto": "Arroz con pollo",
+        "imagen": "assets/img/producto17.webp",
+        "precio": 14000,
+        "descripcion": "Arroz con pollo, verduras y salsa agridulce."
+      }
+]

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="shortcut icon" href="/assets/img/favicon.svg" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/estilos.css">
+    <link rel="stylesheet" href="/assets/css/sidebars.css">
+
+</head>
+<body>
+    <section class="container-fluid">
+        <section class="row">
+          <div class="p-0 col-2 bg-dark" data-bs-theme="dark">
+            <div class="sticky-top bg-dark">
+              <div class="w-100 h-100">
+                <div class="shadow w-100 container-fluid">
+                  <a href="index.html"
+                    class="d-flex align-items-center pb-3 mb-1 link-body-emphasis text-decoration-none border-bottom">
+                    <img src="/assets/img/favicon.svg" alt="">
+                    <span class="fs-5 fw-semibold">Practices</span>
+                  </a>
+                </div>
+                <div class="p-3 navbar-nav-scroll">
+    
+                  <ul class="nav flex-column">
+    
+                    <li class="mb-1">
+                      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#logic_level1" aria-expanded="false">
+                        LOGIC LEVEL 1
+                      </button>
+                      <!--class="collapse show"= lista deplegada ajustar aria-expanded-->
+                      <div class="collapse" id="logic_level1">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                          <li><a href="/ejercicio1.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded">1 a n</a></li>
+                          <li><a href="/ejercicio2.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Par/Impar</a></li>
+                          <li><a href="/ejercicio3.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Pizzeria</a></li>
+                          <li><a href="/ejercicio4.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded">El Menu</a></li>
+                          <li><a href="/ejercicio4-1.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded">El Menu 2.0</a></li>
+                          <li><a href="/ejercicio5.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Tablas de multiplicar</a></li>
+                          <li><a href="/ejercicio6.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Matricula</a></li>
+                        </ul>
+                      </div>
+                      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#logic_level1" aria-expanded="true">
+                        LOGIC LEVEL 2
+                      </button>
+                      <!--class="collapse show"= lista deplegada ajustar aria-expanded-->
+                      <div class="collapse show" id="logic_level1">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                          <li><a href="/ejercicio7.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded">3x+1</a></li>
+                        </ul>
+                      </div>
+                      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#logic_level1" aria-expanded="true">
+                        API / APIREST
+                      </button>
+                      <!--class="collapse show"= lista deplegada ajustar aria-expanded-->
+                      <div class="collapse show" id="logic_level1">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                          <li><a href="/ejercicio8.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Rick & Morty</a></li>
+                          <li><a href="/ejercicio9.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded">pokedex</a></li>
+                        </ul>
+                      </div>
+                    </li>
+    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+            <div class="p-2 col-10"  data-bs-theme="dark">                
+                <div class="contenedorPrimario d-flex justify-content-center align-items-center flex-column mt-3">
+
+
+
+                                <div class="col-6 offset-3">
+                                    <h1>Ejercicio 1: suma 1 a n</h1>
+                                    <form id="EJ1">
+
+                                        <label class="m-2"> Ingrese un numero</label>
+                                        <input type="number" id="numeroN" class="form-control m-2">
+                        
+                                    
+                                    <button class="btn btn-dark m-2" type="submit" id="">Ejecutar</button>
+                                    </form>
+
+                                </div>
+
+                    
+                </div>
+           </div>
+
+        </section>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js"></script>
+    <script src="/assets/js/logica1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

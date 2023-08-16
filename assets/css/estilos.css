@@ -1,0 +1,270 @@
+:root{
+  --color--button1: #2c9caf;
+  --color--button2: #70bdca;
+  --color--button3: #268391;
+  --color--h1: #268391;
+}
+
+body{
+    background: #212121;
+    color: #fff;
+}
+.contenedorPrimario {
+    height: 95vh;
+}
+
+.swal2-container {
+    background-size: 20% !important;
+}
+.currency:before {
+  content: '$';
+}
+
+.currency:after {
+  content: '.00';
+  float: right;
+}
+
+
+
+.zoomimages {
+    padding: 50px;
+    transition: transform .5s; /* Animation */    
+    margin: 0 auto;
+  }
+  
+  .zoomimages:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+  .buttonShop {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .buttonShop:hover {
+    animation: pulse 1s linear infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+.cardTablaMult{
+    background: rgba(255,255,255,0.09);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255,255,255,0.125);    
+    width: 400px;
+    border-radius: 25px;
+}
+.cardTablaMultdiv{
+  border-bottom: 1px solid rgba(255,255,255,0.125);
+  color: black;
+  font-size: medium;
+  text-align: center;  
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.textheadTM{
+  color: var(--color--h1);
+}
+
+.marginDivTm{
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+.buttonTM {
+  padding: 1em 2em;
+  background: rgba(255,255,255,0.25);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--color--button1);
+  transition: all 1000ms;
+  font-size: 8px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid var(--color--button1);
+}
+
+.buttonTM:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid var(--color--button2);
+  box-shadow: 4px 5px 17px -4px var(--color--button3);
+}
+
+.buttonTM::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--color--button1);
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.buttonTM:hover::before {
+  width: 250%;
+}
+
+.inputTM {
+  border-radius: 5px;
+  max-width: 190px;
+  outline: 2px solid var(--color--button1);
+  background: none;  
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.inputTM::placeholder {
+  color: var(--color--h1);
+  transition: all 0.3s ease;
+}
+
+.inputTM:focus::placeholder {
+  color: #999;
+}
+
+
+.tmtable {
+  font-size:12px;
+  color:#333333;
+  width:100%;
+  border-width: 1px;
+  border-color: #729ea5;
+  border-collapse: collapse;
+}
+.tmtable th {
+  font-size:12px;
+  background-color:#acc8cc;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;border-color: #729ea5;
+  text-align:left;
+}
+.tmtable tr {
+  background-color:#d4e3e5;
+}
+.tmtable td {
+  font-size:12px;border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #729ea5;
+  text-align: center;
+  font-size: 12px;
+}
+.tmtable tr:hover {
+  background-color:#ffffff;
+}
+
+.scrollTM{
+  max-height: 300px;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+
+.scrollTM::-webkit-scrollbar {
+  width: 1em;
+
+}
+
+.scrollTM::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+}
+
+.scrollTM::-webkit-scrollbar-thumb {
+background-color: var(--color--button2);
+outline: 1px solid var(--color--button2);
+border-radius: 25px;
+}
+
+
+.cardBackMT{
+	width: 500px;
+	height: 370px;
+	background-color: whitesmoke;
+  color: #000;
+  border-radius: 25%;
+  position: absolute;
+	top: 10%;
+	left: 45%;
+
+}
+
+.cardFrontMT{
+	width: 500px;
+	height: 370px;
+	background-color: lightgray;
+  color: #000;
+	border-radius: 25%;
+  position: absolute;
+	top: 10%;
+	left: 45%;
+
+}
+
+.buttonMT{
+  position: absolute;
+	top: 70%;
+	left: 57%;
+  background: #28a012;
+  color: #fff;
+  border-color: #fff;
+	border-radius: 25px;
+
+}
+
+.pageleft{
+  transition: transform 1s linear;
+  transform-origin: top left;
+  transform-style: preserve-3D;
+  transform: rotateY(110deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+  box-shadow: 1px 1px 12px #000;
+  
+}
+.pageleft div{
+  visibility: hidden;
+}
+.pageleft select{
+  visibility: hidden;
+}
+
+.pageright{
+  transition: transform 1s linear;
+  transform-origin: top left;
+  transform-style: preserve-3D;
+  transform: rotateY(0deg);
+}
