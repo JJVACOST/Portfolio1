@@ -1,15 +1,17 @@
-let myApi = "https://rickandmortyapi.com/api/character"
+function loadpage(params = "https://rickandmortyapi.com/api/character") {
+  
+let myApi = params
 let rmhtml = ""
 
-fetch(myApi)
-    .then((response) => response.json())
-    .then((dataRick) => {
+    fetch(myApi)
+        .then((response) => response.json())
+        .then((dataRick) => {
 
         let divRM = document.querySelector("#cardsRM")
         console.log(dataRick)
-       
-        dataRick.results.forEach((personaje) => {
+        divRM.innerHTML = rmhtml
 
+        dataRick.results.forEach((personaje) => {
             rmhtml += `
                 <div class="col-3 p-2">
                   <div class="card">
@@ -31,4 +33,43 @@ fetch(myApi)
         console.log(rmhtml)
         divRM.innerHTML += rmhtml
 
-    });
+        let navegacion = document.querySelector("#buttonsNav")
+        let botones = ''
+
+        navegacion.innerHTML = botones
+
+        if(dataRick.info.prev != null){
+          botones += `
+                      <div class="col-4 d-flex justify-content-center">
+                        <button class="buttonRM" id="buttonRMBack"  onclick="loadpage('${dataRick.info.prev}')">anterior</button>
+                      </div>          
+                      `
+                                      }
+        if(dataRick.info.next != null){
+          botones += `
+                      <div class="col-4 d-flex justify-content-center">
+                        <button class="buttonRM" id="buttonRMForw" onclick="loadpage('${dataRick.info.next}')">siguiente</button>
+                      </div>          
+                      `
+                                      }
+
+        navegacion.innerHTML += botones
+
+    })
+    
+    }
+
+
+    loadpage()
+
+    let myfiltro  = document.querySelector("#buscador")
+
+    myfiltro.addEventListener("change", (e) => {
+      console.log(e.target.value)
+      let mivalor = "https://rickandmortyapi.com/api/character/?name=" + e.target.value
+
+      console.log(mivalor)
+
+      loadpage(mivalor)
+
+    })
