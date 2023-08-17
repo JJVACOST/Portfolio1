@@ -11,7 +11,7 @@ fetch(myApi)
         dataRick.results.forEach((personaje) => {
 
             rmhtml += `
-                <div class="col-2 p-2">
+                <div class="col-3 p-2">
                   <div class="card">
                   <img src="${personaje.image}" class="card-img-top zoomimages" alt="...">
                   <div class="card-body">
