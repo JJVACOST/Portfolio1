@@ -209,20 +209,21 @@ border-radius: 25px;
 
 .cardBackMT{
 	width: 500px;
-	height: 370px;
-	background-color: whitesmoke;
+	height: 420px;
+	background-color: #A3E4D7;
   color: #000;
   border-radius: 25%;
   position: absolute;
 	top: 10%;
 	left: 45%;
+  padding: 0 0 0 25px;
 
 }
 
 .cardFrontMT{
 	width: 500px;
-	height: 370px;
-	background-color: lightgray;
+	height: 420px;
+	background-color: #17A589;
   color: #000;
 	border-radius: 25%;
   position: absolute;
@@ -249,9 +250,9 @@ border-radius: 25px;
   transform: rotateY(110deg);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-transform: rotatey(-90deg);
-  -ms-transform: rotatey(-90deg);
-  transform: rotatey(-90deg);
+  -webkit-transform: rotatey(-85deg);
+  -ms-transform: rotatey(-85deg);
+  transform: rotatey(-85deg);
   box-shadow: 1px 1px 12px #000;
   
 }
@@ -267,4 +268,6 @@ border-radius: 25px;
   transform-origin: top left;
   transform-style: preserve-3D;
   transform: rotateY(0deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }

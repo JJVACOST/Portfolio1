@@ -42,7 +42,7 @@ function myFunction() {
     localStorage.setItem("position", 0)
   }
 
-  let resultado = 0
+  let resultado = ""
 
   if (localStorage.getItem("position") == 0) {
     document.getElementById("moverEsto").classList.add('pageleft')
@@ -51,80 +51,52 @@ function myFunction() {
 
 
     let notas = document.querySelectorAll("[data-materias]")
-    let sum = 0
+    let sum = 0.00
     
 
     notas.forEach(mynota => {
+      console.log(mynota.value*1 + ' valor')
       sum = parseFloat(sum) + parseFloat(mynota.value)
-      console.log(' la nota acumlada es ' + sum)
+      
       console.log(mynota.id + ' la nota es ' + mynota.value)
+      console.log(' la nota acumlada es ' + sum)
 
     })
 
-    let promedio = Math.round(sum / notas.length, 0)
-    console.log(promedio)
+    let promedio = (sum / notas.length).toFixed(2)
+    let valor = 0
+    let descuento = ""
+    console.log(promedio + ' prom')
 
 
     if (promedio < 3) {
-      let valor = 1000000 - (1000000 * 0.0)
-      resultado = `
-                          <div>
-                            Ingenieria de Software
-                          </div>
-                          <div>
-                            Tu matricula tiene un valor <span class="currency">1000000</span>
-                          </div>   
-                          <div>
-                            Tu promedio fue : ${promedio}
-                          </div>        
-                          <div>
-                            Tienes un descuento del: 0%
-                          </div>              
-                          <div>
-                            Tu matricula con descuento tiene un valor de <span class="currency">${valor}</span>
-                          </div> 
-                          `
-
+      valor = 1000000 - (1000000 * 0.0)
+      descuento = "0%"
     } else if (promedio >= 3 && promedio <= 4) {
-      let valor = 1000000 - (1000000 * 0.05)
-      resultado = `
-                          <div>
-                            Ingenieria de Software
-                          </div>
-                          <div>
-                            Tu matricula tiene un valor <span class="currency">1000000</span>
-                          </div>   
-                          <div>
-                            Tu promedio fue : ${promedio}
-                          </div>        
-                          <div>
-                            Tienes un descuento del: 5%
-                          </div>              
-                          <div>
-                          Tu matricula con descuento tiene un valor de <span class="currency">${valor}</span>
-                          </div> 
-                          `
-
+      valor = 1000000 - (1000000 * 0.05)
+      descuento = "5%"
     } else if (promedio > 4) {
-      let valor = 1000000 - (1000000 * 0.5)
-      resultado = ` 
-                          <div>
-                            Ingenieria de Software
-                          </div>                          
-                          <div>
-                            Tu matricula tiene un valor <span class="currency">1000000</span>
-                          </div>
-                          <div>
-                            Tu promedio fue : ${promedio}
-                          </div>        
-                          <div>
-                            Tienes un descuento del: 50%
-                          </div>              
-                          <div>
-                          Tu matricula con descuento tiene un valor de <span class="currency">${valor}</span>
-                          </div> 
-                          `}
-    vmatricula.innerHTML += resultado
+      valor = 1000000 - (1000000 * 0.5)
+      descuento = "50%"
+    }
+    
+      vmatricula.innerHTML += ` 
+                            <div>
+                              <h1>Ingenieria de Software</h1>
+                            </div>                          
+                            <div>
+                              Tu matricula tiene un valor <span class="currency"><b>1000000</b></span>
+                            </div>
+                            <div>
+                              Tu promedio fue : <b>${promedio}</b>
+                            </div>        
+                            <div>
+                              Tienes un descuento del: <b>${descuento}</b>
+                            </div>              
+                            <div>
+                            Tu matricula con descuento tiene un valor de <span class="currency"><b>${valor}</b></span>
+                            </div> 
+                            `
 
 
   } else {
@@ -138,6 +110,23 @@ function myFunction() {
 
 }
 
+function exit(){
+  let notas = document.querySelectorAll("[data-materias]")
+  let exx = 0
+  notas.forEach(mynota => {
+      if (mynota.value != ""){        
+        exx = exx + 1
+      }
+  })
+  if (notas.length != exx){
+    Swal.fire('Diligencie todas las notas!!')
+    return
+  }else{
+    myFunction()
+  }
+  
+
+}
 
 function int(value) {
   return parseFloat(value).toFixed(2)
@@ -156,6 +145,6 @@ function checkValue(sender) {
 
 function pepe(valor) {
   let valorInput = valor.value
-  valorInput = valorInput.replace(/[^\d,]/g,'')
+  valorInput = valorInput.replace(/[^\d.]/g,'')
   valor.value = valorInput
   }
