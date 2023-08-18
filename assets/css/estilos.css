@@ -249,9 +249,9 @@ border-radius: 25px;
   transform: rotateY(110deg);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-transform: rotatey(-80deg);
-  -ms-transform: rotatey(-80deg);
-  transform: rotatey(-80deg);
+  -webkit-transform: rotatey(-90deg);
+  -ms-transform: rotatey(-90deg);
+  transform: rotatey(-90deg);
   box-shadow: 1px 1px 12px #000;
   
 }
