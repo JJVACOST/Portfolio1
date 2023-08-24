@@ -8,8 +8,6 @@
   width : 100%;
   display : flex;
   align-items : center;
-  justify-content : center;
-  flex-warp : wrap;
   padding : 30px;  
   margin : 0;
   padding: 0;
@@ -24,12 +22,12 @@
   background-color : #fff;
   margin : 30px 10px;
   padding : 20px 15px;
-  
   display : flex;
   flex-direction : column;
   box-shadow : 0 5px 20px rgba(0,0,0,0.5);
   transition : 0.3s ease-in-out;
   border-radius : 15px;
+  
 }
 .container .card:hover {
   height : 320px;    
@@ -40,16 +38,19 @@
   position : relative;
   width : 260px;
   height : 260px;
-  
-  top : -40%;
-  left: 8px;
+  top : -40%;  
   box-shadow : 0 5px 20px rgba(0,0,0,0.2);
   z-index : 1;
+
 }
 
 .container .card .image img {
   max-width : 100%;
   border-radius : 15px;
+
+  width: 60%;
+  margin: auto;
+  display: block;
 }
 
 .container .card .content {
