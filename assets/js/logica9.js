@@ -24,7 +24,7 @@ let nav =  []
 
 
 
-async function pokeList(api="https://pokeapi.co/api/v2/pokemon/?offset=0&limit=20"){  
+async function pokeList(api="https://pokeapi.co/api/v2/pokemon/?offset=0&limit=40"){  
     
     let templist = await leer(api)
     nav =  []
@@ -36,7 +36,7 @@ async function pokeList(api="https://pokeapi.co/api/v2/pokemon/?offset=0&limit=2
        myatribute =  await leer(element.url)
        myeffect =  await leer(myatribute.abilities[0].ability.url)
        
-       pokelist.push({name: element.name , url: element.url, imagen: myatribute.sprites.front_default, imagenback: myatribute.sprites.back_default, urlability: myatribute.abilities[0].ability.url, type: myatribute.types[0].type.name, specie: myatribute.species.name, effect: myeffect.effect_entries[0].effect})        
+       pokelist.push({name: element.name , url: element.url, imagen: myatribute.sprites.front_default, imagenback: myatribute.sprites.back_default, urlability: myatribute.abilities[0].ability.url, type: myatribute.types[0].type.name, specie: myatribute.species.name, effect: myeffect.names[5].name})        
     })   
    myprint()
 }
@@ -67,7 +67,8 @@ function myprint(){
                                 <div class = content style='background-color: ${colors[element.type]}; border-radius: 100px 100px 10rem 10rem;'>
                                     <h2 style="color:#000000; ">${element.name}</h2>
                                     
-                                    <h4 style="color:#fff; -webkit-text-stroke-width: 1px;-webkit-text-stroke-color: black;">${element.type}</h4>
+                                    <h4 style="color:#fff; -webkit-text-stroke-width: 1px;-webkit-text-stroke-color: black; ">${element.type}</h4>
+                                    <p>${element.effect}</p>
                                     <img src = ${element.imagenback}>
                                 </div>
                             </div>    
