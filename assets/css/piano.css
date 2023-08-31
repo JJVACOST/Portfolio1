@@ -1,0 +1,13 @@
+
+.tecla{
+    width: 100px;
+    height: 200px;
+    background-color: azure;
+    border:  1px  solid #333;
+    color: #000;
+    font-weight: bold;
+    text-shadow: #333;
+    text-align: center;
+
+
+}
