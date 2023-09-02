@@ -17,7 +17,8 @@ let keys = [
     {key: 72, letter:"H"},
     {key: 74, letter:"J"},
     {key: 75, letter:"K"},
-    {key: 76, letter:"L"},
+    {key: 76, letter:"L"}
+
 ]
 
 

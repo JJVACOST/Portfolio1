@@ -148,7 +148,9 @@ class circulo extends figura{
 
     calcularArea(radio){
         let area = Math.PI * Math.pow(radio,2)
+         
         return area.toFixed(2)
+        
     }
 }
 
@@ -168,13 +170,13 @@ const micirculo = new circulo()
 
 const mirectangulo = new rectangulo()
 
-console.log(micirculo.calcularArea(0.5))
+console.log(micirculo.calcularArea(2))
 console.log(mirectangulo.calcularArea(5,3))
 
 
 let ex41 = document.getElementById("ej4-1")
 let ex42 = document.getElementById("ej4-2")
-let ex41r1= `el area del circulo es => ${micirculo.calcularArea(0.5)}`
+let ex41r1= `el area del circulo es => ${micirculo.calcularArea(2)}`
 let ex42r1= `el area del rectangulo es => ${mirectangulo.calcularArea(5,3)}`
 
 ex41.innerHTML += ex41r1
@@ -201,15 +203,16 @@ class personanew {
 
 }
 let x = new direccion(86,'bogota', 110502)
-const mipersona1 = new personanew('Alex',1010101,x)
+const mipersona1 = new personanew('Alex',1010105,x)
 
 
 console.log(mipersona1)
 
 let ex51 = document.getElementById("ej5-1")
 
-let ex51r1= `el area del circulo es => ${JSON.stringify(mipersona1)}`
+let ex51r1= `La persona y su direccion es => ${JSON.stringify(mipersona1)}`
 
+ ex51r1+= `<br>La persona y su direccion es => ${mipersona1.direccion.calle}`
 
 ex51.innerHTML += ex51r1
 
@@ -234,7 +237,6 @@ class animal {
     constructor(voz){
         this.voz = voz;
     }
-
     hablar(){
         return 'con este metodo el animal habla'
     }
